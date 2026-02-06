@@ -4,11 +4,12 @@ const API_URL = `${import.meta.env.VITE_BACKEND_URL}/api`;
 
 
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: "https://crave-cloud-invoice-platform.onrender.com/api",
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
 });
+
 
 // Client APIs
 export const clientAPI = {
